@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  .task-item {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .task-item:hover {
+    @apply transform scale-[1.01] shadow-md;
+  }
+  
+  .priority-low {
+    @apply border-l-4 border-l-green-500;
+  }
+  
+  .priority-medium {
+    @apply border-l-4 border-l-yellow-500;
+  }
+  
+  .priority-high {
+    @apply border-l-4 border-l-red-500;
+  }
+}
