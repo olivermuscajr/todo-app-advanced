@@ -3,6 +3,8 @@ import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { format, parseISO, isValid } from 'date-fns'
 
+/* Task Item */
+
 const PRIORITY_LEVELS = {
   LOW: 'low',
   MEDIUM: 'medium',
